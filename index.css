@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fce5d2;
+}
+
+
+#welcometitle {
+
+    font-family: 'Abel', sans-serif;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf1e8;
+    top: 50px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: 0.5s;
+    font-family: 'Abel', sans-serif;
+    padding: 80px;
+}
+
+
+
+#addPost{
+    position: fixed;
+    width: 200px;
+    height: 64px;
+    background-color: rgb(237, 178, 100);
+    border: 0px solid white;
+    border-radius: 32px;
+    bottom: 32px;
+    right: 32px;
+    font-family: 'Abel', sans-serif;
+}
+
+#addPost:hover{
+    background-color: rgb(173, 94, 234);
+}
+
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+   
+}
+
+#input{
+    width: 70%;
+    height: 30px;
+    left: 40px;
+    display: flex;
+    border-radius: 32px;
+    flex-direction: column;
+    position: fixed;
+    flex: end;
+    border: 0px solid white;
+    background-color: rgb(255, 255, 255);
+    bottom: 50px;
+    right: 40%;
+    font-family: 'Abel', sans-serif;
+}
+
+label{
+    width: 70%;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    flex: end;
+    bottom: 120px;
+    right: 30%;
+    font-family: 'Abel', sans-serif;
+}
+
+#select {
+    width: 20%;
+    height: 10px;
+    left: 40px;
+    display: flex;
+    border-radius: 32px;
+    flex-direction: column;
+    position: fixed;
+    flex: end;
+    border: 0px solid white;
+    background-color: rgb(255, 255, 255);
+    bottom: 90px;
+    right: 40%;
+    font-family: 'Abel', sans-serif;
+}
+
+
+
+
+.jansport {
+    display: flex;
+    flex-direction: row;
+   background-color: rgb(254, 212, 212);
+   margin-top: 3px;
+   border-radius: 30px;
+   padding: 4px;
+   justify-content: space-between;
+   
+
+}
+
+.alignitems {
+
+    margin-right: 7px;
+    gap: 3px;
+    
+}
+
