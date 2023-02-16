@@ -15,14 +15,27 @@ const select = document.getElementById('select');
 
 addPost.addEventListener('click',createPost);
 
-function createPost(){
-  console.log(input.value)
+//function createPost(){
+  //console.log(input.value)
+    //const h4 = document.createElement('h4');
+    //h4.textContent = input.value;
+    //content.appendChild(h4);
+    //return content }
+
+const newPost = sortPost()
+
+function sortPost(){
+  if(select.value === "camelcase"){
+    const _ = require('lodash/camelcase');
+    const trans = _(input.value); 
     const h4 = document.createElement('h4');
-    h4.textContent = input.value;
     content.appendChild(h4);
     return content 
+    h4.textContent = input.value;
+    console.log('_');
+    return _;
+  }
 }
-
 
 
 
