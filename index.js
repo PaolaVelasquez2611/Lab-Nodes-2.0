@@ -23,6 +23,9 @@ addPost.addEventListener('click',sortPost);
 
 
 const _ = require('lodash');
+import {rword} from 'rword';
+const randomWords = require ('random-words')
+
 
 
 function sortPost(){
@@ -32,7 +35,7 @@ function sortPost(){
     h4.innerHTML = trans;
     content.appendChild(h4);
     return content
-    
+
   }
   else if (select.value === "snakeCase"){
     const trans =_.snakeCase(input.value); 
@@ -41,8 +44,8 @@ function sortPost(){
     content.appendChild(h4);
     return content
   }
-else if (select.value === "capitalize"){
-  const trans =_.capitalize(input.value); 
+else if (select.value === "randomWords"){
+  const trans = randomWords({min: 1 , max: 10})(input.value); 
   const h4 = document.createElement('h4');
   h4.innerHTML = trans;
   content.appendChild(h4);
@@ -53,7 +56,7 @@ else if (select.value === "capitalize"){
 module.exports = {
   sortPost}
 
-  
+
 let transs = select.value
 
 function creardos (transs){
@@ -66,12 +69,7 @@ function creardos (transs){
 
 
 
-const Notes = require('./sortPost.js')
-Notes.sortPost ()
 
-
-import {rword} from 'rword';
-console.log(rword);
 
 
 
