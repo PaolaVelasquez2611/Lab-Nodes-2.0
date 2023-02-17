@@ -76,6 +76,10 @@ function creardos (transs){
 
 
 
+
+
+
+
 //const trans = "camelCase"
 //function crearNota(inputValue) {
 //   _[trans](inputValue)
